@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $fquicksand;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: $froboto;
+    font-size: 100px;
+    font-weight: 100px;
+    line-height: 0.8;
+    
+}
+
+h2 {
+    font-family: $froboto;
+    font-size: 40px;
+    font-weight: 100px;
+    line-height: 0.7;
+
+}
+
+//MOBILE VERSION//
+
+@media screen and (max-width: 760px) {
+
+    h1 {
+        font-size: 70px;
+    }
+    
+}

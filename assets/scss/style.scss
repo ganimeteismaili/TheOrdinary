@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Quicksand:wght@400;600&family=Roboto&family=Satisfy&display=swap');
+@import 'variables';
+@import 'base';
+
+//HEADER
+header {  
+    height: 55px;
+    background-color: black;
+
+    .container { 
+        height: 55px;
+        width: 100%;
+       
+        //display: flex;
+        //justify-content: space-between;
+        //align-items: center;
+        
+                nav { 
+                    height: 55px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    //padding: 10px;
+                    //padding-top: 5px;
+                    //padding-left: 5px;
+                    //padding-right: 5px;
+
+                
+
+                      ul { 
+                        list-style-type: none;
+                        //list-style-type: none;
+                        //display: flex;
+                        //justify-content: space-around;
+                        //align-items: center;
+                                         
+                    
+                      } 
+
+                      li { display: inline-block;
+                            //padding: 10px 25px;
+                      }  
+
+                     
+                     a {color: white;
+                        font-size:medium;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                        padding: 30px;
+                       }
+        
+                    a:hover {
+                       color: rgb(124, 5, 70);
+                       transition: .5s;
+                       text-decoration: none;
+
+                       }
+                    .btn {
+                     background-color: white;
+                     color: rgb(124, 5, 70);
+                     text-decoration: none;
+                     border: 2px solid transparent;
+                     font-weight: 700;
+                     padding: 5px 25px;
+                     border-radius: 40px;
+                     transition: transform .4s;
+    
+                        .btn:hover {
+                         transform: scale(1.2);
+                          }
+                      }
+                    }
+                 }
+                }
+    
+
+
+//MAIN
+main {
+    width: 100%;
+    height: calc(100vh - 55px);
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+.content {
+    width: fit-content;
+    height: inherit;
+    display: flex;
+    align-items: flex-end; 
+    
+}
+
+    .title {
+        grid-column: 1 / 4;
+        text-indent: 20px;
+
+    }
+
+
+.grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr ;
+
+    .photo { 
+        width: 170px;
+        height: 200px;
+        display:inline-block;
+        border-radius: 10px;
+        padding: 10px 25px;
+        margin: 10px 15px;
+        transition: transform 0.5s;
+        
+    }
+    .first {background-image: url(/assets/images/product8.jfif);}
+    .second {background-image: url(/assets/images/4.jfif);}
+    .third {background-image: url(/assets/images/product6.jfif);}
+
+    .photo:hover {
+        transform: translate(-20px);
+    }
+}
+}
+
+
+// OUR PRODUCTS
+section.products {
+    width: 100%;
+    background-color: rgb(241, 217, 232);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 90px;
+
+
+    h2 { text-align: center;
+         color: rgba(0, 0, 0, 0.719);
+         font-size: 70px;
+}
+ 
+    .Ldiv {
+
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+        border-radius: 30px;
+    
+
+    .sdiv {
+        width: 200px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 2fr, 2fr;
+        border-radius: 30px;
+        background-color: beige;
+        text-align: center;
+          
+        
+    }
+    img {
+        width: 200px;
+        border-radius: 20px;
+    }
+    h4 { margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.25rem; 
+
+       }
+       p {
+        font-size: 15px;
+        font-weight:300 ;
+        margin-top: 10px;
+       }
+       a { 
+        color: rgba(44, 37, 56, 0.664);
+        font-size: small;
+        font-weight:bold;}
+      
+        a:hover {
+            color: rgb(162, 0, 255);
+            transition: 0.5s;
+        }
+       
+     }
+}
+
+//SALE
+section.sale {
+    background-color:bisque;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+
+    
+    
+
+    h2,p {font-family: $fsatisfy;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.781);
+        padding-bottom: 80px;
+        font-size: 40px;
+
+        
+    }
+
+    .big {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 80px
+        //justify-items: center;
+        //align-items: center;
+    }
+
+    .circle {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        //background-size: cover;
+        //background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 15px;
+    }
+
+    .nje {background-image: url( /assets/images/circle0.jfif);}
+    .dy {background-image: url( /assets/images/circle01.jfif);}
+    .tre {background-image: url( /assets/images/circle03.jfif);}
+    .kater {background-image: url(/assets/images/circle4.jfif);}
+    .pese {background-image: url(/assets/images/cicrcle2.jfif);}
+    .gjashte {background-image: url(/assets/images/circle02.jfif);}
+      
+
+        h4,p {
+               text-align: center;
+               font-size: 20px;   
+        }
+
+        span {color: rgba(238, 11, 11, 0.945);
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+
+
+
+//SECTION FOUR//
+section.contact {
+
+    width: 100%;
+    height: auto;
+    background-image: url(/assets/images/the-ordinary-1.png);
+    background-size: cover;
+
+    
+
+    h4 {padding-top: 100px;
+        padding-bottom: 50px;
+        text-align: center;
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.562);
+    }
+
+    .social-media {
+        padding: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
+       
+
+        ul { list-style-type: none;}
+
+    li {
+        display: inline-block;
+        padding: 0px 40px;
+    }
+}
+
+ //MOBILE VERSION (media query)
+ 
+@media screen and (max-width: 760px) {
+    
+nav { width: 100%;
+    
+           ul {
+            width: 50%;
+            display: none;
+    }
+}
+
+main { 
+    background-position: center;
+
+    .content {
+        height: auto;
+
+        .grid {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        .title {
+            padding-top: 10px;
+            grid-column: 1/2;
+        }
+    }
+    }
+}
+
+section.products {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    h2 { text-align: center;
+         color: rgba(0, 0, 0, 0.719);
+         font-size: 50px;
+        }
+ 
+    .Ldiv {
+        width: fit-content;
+        justify-self: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;  
+     }
+}
+
+section.sale {
+    //background-color:bisque;
+    //display: grid;
+    //align-items: center;
+    //justify-content: center;
+    //padding: 90px;
+
+    
+    
+
+    h2 {
+        //font: $froboto;
+        //text-align: center;
+        //color: rgba(0, 0, 0, 0.781);
+        //padding-bottom: 80px;
+        font-size: 40px;
+    }
+
+    .big {
+        
+        //display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 80px
+        //justify-items: center;
+        //align-items: center;
+    }
+      
+
+        h4,p {
+               text-align: center;
+               font-size: 20px;      
+        }
+
+        
+    }
+
+
+
+section.contact {
+
+    width: 100%;
+    height: auto;
+    background-image: url(/assets/images/the-ordinary-1.png);
+    background-size: cover;
+    background-position: right;
+
+
+    h4 {
+        text-align: center;
+       
+    }
+
+    .social-media {
+        padding-top: 50px;
+        padding-bottom: 400px;
+        
+    
+        ul { display: flex;
+        }
+        li {
+            padding: 5px 10px;
+        }
+    }     
+  }
+}  
